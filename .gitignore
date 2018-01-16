@@ -1,0 +1,16 @@
+# python
+*.egg-info
+*.pyc
+__pycache__
+.cache
+
+# vim
+.*.swp
+*~
+
+# output from notebook
+*.pdf
+.ipynb_checkpoints
+
+# sphinx
+doc/_build

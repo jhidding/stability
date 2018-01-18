@@ -25,7 +25,7 @@ setup(
         'Topic :: Scientific/Engineering'],
 
     install_requires=[
-        'numpy', 'scipy', 'matplotlib', 'jupyter'],
+        'numpy', 'scipy', 'matplotlib', 'jupyter', 'sdeint'],
 
     extras_require={
         'develop': [

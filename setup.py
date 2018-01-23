@@ -22,14 +22,16 @@ setup(
         'Intended Audience :: Science/Research',
         'Development Status :: 4 - Beta',
         'Programming Language :: Python :: 3',
-        'Topic :: Scientific/Engineering'],
+        'Topic :: Scientific/Engineering'
+    ],
 
     install_requires=[
-        'numpy', 'scipy', 'matplotlib', 'jupyter', 'sdeint'],
+        'numpy', 'scipy', 'matplotlib', 'jupyter', 'sdeint'
+    ],
 
     extras_require={
         'develop': [
-            'sphinx'
+            'sphinx', 'pytest'
         ]
     }
 )

@@ -22,16 +22,14 @@ def cubic_roots(a, b, c, d):
         
     elif (b != 0): # Case: bx^2 + cx + d = 0
         delta = c**2 - 4*b*d
-        return [(-c + (-1)**k*np.sqrt(delta + 0j))/(2*b)
-                for k in [0, 1]]
+        return [(-c + k*np.sqrt(delta + 0j))/(2*b)
+                for k in [-1, 1]]
     
     elif (c != 0): # Case: cx + d = 0
         return -d/c
     
-    elif (d != 0): # Case: d = 0 (without solution)
+    elif (d != 0): # Case: d != 0 (without solution)
         return np.nan
     
     else: # Case: d = 0 (with trivial solution)
         return 0
-        
-
